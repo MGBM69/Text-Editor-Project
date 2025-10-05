@@ -1,0 +1,45 @@
+<!-- text-editor.component.html -->
+<div class="container mt-4">
+  <div class="row">
+    <!-- Text Area Section -->
+    <div class="col-md-8">
+      <div class="card p-3 shadow-sm">
+        <h5>The Text Box</h5>
+        <textarea
+          class="form-control"
+          rows="15"
+          placeholder="Enter or load your text here..."
+        ></textarea>
+      </div>
+
+      <!-- Bottom Controls -->
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <div class="d-flex align-items-center">
+          <label class="me-2 fw-bold">Flesch Index:</label>
+          <input type="text" class="form-control form-control-sm w-25" readonly />
+        </div>
+        <button class="btn btn-outline-danger btn-sm">Clear</button>
+      </div>
+    </div>
+
+    <!-- Control Buttons Section -->
+    <div class="col-md-4">
+      <div class="d-flex flex-column gap-2">
+        <button class="btn btn-primary">Load Text</button>
+        <button class="btn btn-secondary">Flesch Index</button>
+        <button class="btn btn-info">Edit Distance</button>
+        <button class="btn btn-success">Generate Markov Text</button>
+
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" id="spellCheck" />
+          <label class="form-check-label" for="spellCheck">Spelling Suggestions</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="autoComplete" />
+          <label class="form-check-label" for="autoComplete">Auto Complete</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
